@@ -144,4 +144,58 @@ boolalpha;                          // enable printing "true"/"false"
 noboolalpha;                        // reset to 1/0
 
 
+if statement
+if (condition) {
+ //true
+} else {
+ //false
+}
+
+shorthand if else
+variable = (condition) ? expressionTrue : expressionFalse;
+variable = (condition) ? expressionTrue1 : (condition) ? expressionTrue2 :expressionFalse;
+
+nested if
+if (condition1) {
+  // code to run if condition1 is true
+  if (condition2) {
+    // code to run if both condition1 and condition2 are true
+  }
+}
+
+
+Logical operator
+if (con1 && con2) {
+ //code run if both true
+}
+if (con1 || con2) {
+ //code run if one is true
+}
+int x = 5
+if (!(x>10)) {
+ //code run if the condition is false
+}
+
+
+Switch statement
+switch(expression) {
+  case expression1:
+    // code block
+    break;
+  case expression2:
+    // code block
+    break;
+  case expression3:
+    // code block
+    break;
+  default:
+    // run if cant find the expression
+}
+
+LOOPS
+while (condition) {
+  // code block to be executed
+}
+
+
 */
