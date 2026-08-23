@@ -1,28 +1,23 @@
 #include <iostream>
 using namespace std;
+
 int main()
 {
-    for (int i = 0; i < 5; i++)
+    int y, x;
+
+    cout << "what is the x?" << endl;
+    cin >> x;
+    cout << "what is the y?" << endl;
+    cin >> y;
+
+    cout << "Multiplication table\n";
+
+    for (int i = 1; i <= y; i++)
     {
-        cout << i << endl;
+        for (int j = 1; j <= x; j++)
+        {
+            cout << i * j << "  ";
+        }
+        cout << endl;
     }
-
-    return 0;
 }
-
-/*
-while (a < 5){
-    cout << a << endl;
-    a++;
-}
-
-do{
-    cout << a << endl;
-    a++;
-} while (a < 5);
-
-for (int i = 0; i < 5; i++){
-    cout << i << endl;
-}
-
-*/

@@ -2,12 +2,15 @@
 using namespace std;
 int main()
 {
-    int age;
+    int x;
 
-    cout << "Enter your age: \n";
-    cin >> age;
+    cout << "What number you want to see the multiplication table, up to 10\n";
+    cin >> x;
 
-    cout << "You are " << age << " years old.";
+    for (int i = 1; i <= 10; i++)
+    {
+        cout << i << " x " << x << "=" << i * x << endl;
+    }
 
     return 0;
 }

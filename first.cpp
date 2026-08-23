@@ -22,13 +22,13 @@
 using namespace std;
 int main()
 {
-    map<string, int> age;
+  map<string, int> age;
 
-    age["Mark"] = 20;
-    age["John"] = 18;
+  age["Mark"] = 20;
+  age["John"] = 18;
 
-    std::cout << age["Mark"];
-    return 0;
+  std::cout << age["Mark"];
+  return 0;
 }
 
 /*
@@ -48,7 +48,7 @@ A group of functions and variables      create a class
 A collection of Classes, Object, Function, Variable forms a namespace
 
 the return 0 statement indicates that the program has finished successfully
-(\n) newline- escape sequence or std::endll (go next line)
+(\n) newline- escape sequence or std::endl (go next line)
 (\t) tab
 (\\)
 (\')
@@ -193,9 +193,45 @@ switch(expression) {
 }
 
 LOOPS
+WHILE (check the condition first before running the code)
 while (condition) {
   // code block to be executed
 }
+int i = 0;
+while (i < 5) {
+  cout << i << "\n";
+  i++;
+}
+DO WHILE (run the code first before checking the condition || if the condition is false, it will run 1 time)
+do {
+  // code block to be executed
+}
+while (condition);
 
+
+FOR LOOP
+for (statement 1; statement 2; statement 3) {
+  // code block to be executed
+}
+Statement 1 is executed (one time) before the execution of the code block.
+Statement 2 defines the condition for executing the code block.
+Statement 3 is executed (every time) after the code block has been executed
+
+FOR EACH (also known as ranged-based for loop), which is used to loop through elements in an Array
+for (type variableName : arrayName) {
+  // code block to be executed
+}
+
+break;          (stop)
+continue;       (skip)
+
+
+
+ARRAY   V (size)
+int num[4] = {0, 1, 2, 3};
+string str[4] = {"one", "two", "three", "four"};
+
+    V (index)
+num[2];       (shows 2)       (to access the array)
 
 */
