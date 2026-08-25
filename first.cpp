@@ -235,3 +235,23 @@ string str[4] = {"one", "two", "three", "four"};
 num[2];       (shows 2)       (to access the array)
 
 */
+
+/*
+STRUCTURE
+struct {             // Structure declaration
+  int myNum;         // Member (int variable)
+  string myString;   // Member (string variable)
+} myStructure;       // Structure variable Name
+
+myStructure.myNum = 1;
+myStructure.myString = "Hello World!";
+
+
+struct Struction{                           // "Struction" is the struct type
+  int myNum;
+  string myString;
+} myStruct1, myStruct2, myStruct3;          // Multiple structure variables separated with commas
+
+myStruct1.mynum = 6;                        //Assign
+Struction myStruct4;                        //add variable
+*/
