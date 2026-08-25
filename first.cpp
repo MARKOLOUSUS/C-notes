@@ -255,6 +255,21 @@ struct Struction{                           // "Struction" is the struct type
 
 myStruct1.mynum = 6;                        //Assign
 Struction myStruct4;                        //adding a variable
+*/
+
+/*
+ENUM is short for "enumerations", which means "specifically listed".
+can also be out side the int main
+
+enum Level {
+  LOW,             0// not required to use uppercase, but often considered as good practice
+  MEDIUM,          1
+  HIGH             2// last item does not need a comma
+};
+
+enum Level myVar;                    // To access the enum
+enum Level myVar = MEDIUM;         1
+enum Level myVar = HIGH;           2
 
 
 */
