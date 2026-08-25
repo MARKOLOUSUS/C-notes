@@ -305,7 +305,15 @@ Memory Address -  is a unique hexadecimal number that identifies the specific lo
 string food = "Pizza";        // A string variable
 cout << &food;                // Outputs 0x6dfed4
 
-string* ptr = &food;          // A pointer variable that stores the address of food
+Pointer
+string* ptr = &food;          // A Pointer variable that stores the address of food
 cout << ptr << "\n";          // Outputs 0x6dfed4
+cout << *ptr << end;          // Outputs Pizza
+
+Create a pointer variable with the name ptr, that points to a string variable, by using the asterisk sign * (string* ptr).
+string* mystring; // Preferred
+string *mystring;
+string * mystring;
+
 
 */
