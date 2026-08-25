@@ -21,14 +21,10 @@ int main()
 
     int firstx, secondx, thirdx, forthx, firsty, secondy, thirdy, forthy;
 
-    cin >> firstx;
-    cin >> firsty;
-    cin >> secondx;
-    cin >> secondy;
-    cin >> thirdx;
-    cin >> thirdy;
-    cin >> forthx;
-    cin >> forthy;
+    cin >> firstx >> firsty;
+    cin >> secondx >> secondy;
+    cin >> thirdx >> thirdy;
+    cin >> forthx >> forthy;
 
     cout << letters[firstx][firsty];
     cout << letters[secondx][secondy];
