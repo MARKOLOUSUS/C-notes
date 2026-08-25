@@ -316,4 +316,33 @@ string *mystring;
 string * mystring;
 
 
+
+Memory Management - is the process of controlling how much memory your program uses - and how it is used. This includes creating, using, and releasing memory when it's no longer needed.
+
+Memory Size
+int main() {
+  int myInt = 15;
+  float myFloat = 16.135;
+  double myDouble = 10.143567;
+  char myChar = 'A';
+
+  cout << sizeof(myInt) << "\n";     // 4 bytes (typically)
+  cout << sizeof(myFloat) << "\n";   // 4 bytes
+  cout << sizeof(myDouble) << "\n";  // 8 bytes
+  cout << sizeof(myChar) << "\n";    // 1 byte
+  return 0;
+}
+
+
+New - lets you manage memory yourself.
+int* ptr = new int;
+*ptr = 35;
+cout << *ptr;
+
+1. new int creates memory space for one integer
+2. ptr stores the address of that space
+3. *ptr = 35; stores the number 35
+4. cout << *ptr; prints the value
+
+
 */
