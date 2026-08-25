@@ -260,6 +260,7 @@ Struction myStruct4;                        //adding a variable
 /*
 ENUM is short for "enumerations", which means "specifically listed".
 can also be out side the int main
+only store integral value, no string
 
 enum Level {       V automatically start at 0,1,2,3,... if not assigned
   LOW,             0// not required to use uppercase, but often considered as good practice
@@ -285,5 +286,26 @@ enum Level {
   HIGH // Now 7    (automatic)
 };
 
+*/
+
+/*
+Reference - reference variable is an alias for an existing variable. It is created using the & operator:
+
+string food = "Pizza";
+string &meal = food;
+cout << food << "\n";  // Outputs Pizza
+cout << meal << "\n";  // Outputs Pizza
+meal = "Burger"; // changes both meal and food
+cout << food << "\n"; // Outputs Burger
+cout << meal << "\n"; // Outputs Burger
+
+
+Memory Address -  is a unique hexadecimal number that identifies the specific location in the computer's Random Access Memory (RAM) where a variable or object is stored
+
+string food = "Pizza";        // A string variable
+cout << &food;                // Outputs 0x6dfed4
+
+string* ptr = &food;          // A pointer variable that stores the address of food
+cout << ptr << "\n";          // Outputs 0x6dfed4
 
 */
