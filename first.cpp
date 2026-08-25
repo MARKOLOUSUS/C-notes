@@ -261,7 +261,7 @@ Struction myStruct4;                        //adding a variable
 ENUM is short for "enumerations", which means "specifically listed".
 can also be out side the int main
 
-enum Level {
+enum Level {       V automatically start at 0,1,2,3,... if not assigned
   LOW,             0// not required to use uppercase, but often considered as good practice
   MEDIUM,          1
   HIGH             2// last item does not need a comma
@@ -270,6 +270,20 @@ enum Level {
 enum Level myVar;                    // To access the enum
 enum Level myVar = MEDIUM;         1
 enum Level myVar = HIGH;           2
+
+
+enum Level {
+  LOW = 25,
+  MEDIUM = 50,
+  HIGH = 75
+};
+
+
+enum Level {
+  LOW = 5,
+  MEDIUM, // Now 6 (automatic)
+  HIGH // Now 7    (automatic)
+};
 
 
 */
