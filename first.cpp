@@ -237,7 +237,8 @@ num[2];       (shows 2)       (to access the array)
 */
 
 /*
-STRUCTURE
+STRUCTURE is usually defined outside main() because it's a type definition (a blueprint) that can be used anywhere in your program.
+
 struct {             // Structure declaration
   int myNum;         // Member (int variable)
   string myString;   // Member (string variable)
@@ -253,5 +254,7 @@ struct Struction{                           // "Struction" is the struct type
 } myStruct1, myStruct2, myStruct3;          // Multiple structure variables separated with commas
 
 myStruct1.mynum = 6;                        //Assign
-Struction myStruct4;                        //add variable
+Struction myStruct4;                        //adding a variable
+
+
 */
