@@ -335,14 +335,34 @@ int main() {
 
 
 New - lets you manage memory yourself.
+Delete - remove the "new"
 int* ptr = new int;
-*ptr = 35;
-cout << *ptr;
+  *ptr = 35;
+  cout << *ptr << endl;           // 35
+  delete ptr;                     //This tells C++: "I'm done with this memory, you can clean it up now."
+  cout << *ptr;                   // 0
 
 1. new int creates memory space for one integer
 2. ptr stores the address of that space
 3. *ptr = 35; stores the number 35
 4. cout << *ptr; prints the value
+5. delete ptr
+6. cout << *ptr to show 0
+
+For arrays, use new[] and delete[]. For single variables, use new and delete.
+
+
+In most cases, you don't need to use new. C++ will automatically handle memory for normal variables like:
+int age = 35;
+string name = "John";
+But sometimes, you have to manage memory yourself - especially when:
+
+You don't know how much memory you'll need in advance (like how many guests or scores)
+You want to create memory while the program is running, based on user input
+You need to store large or flexible amounts of data
+You want full manual control over memory (e.g., performance-critical code)
+In those cases, new helps you create memory, and delete helps you clean it up when you're done.
+
 
 
 */
