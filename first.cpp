@@ -363,6 +363,13 @@ You need to store large or flexible amounts of data
 You want full manual control over memory (e.g., performance-critical code)
 In those cases, new helps you create memory, and delete helps you clean it up when you're done.
 
+*/
 
+/*
+Function
+
+void myFunction() {
+  // code to be executed
+}
 
 */
