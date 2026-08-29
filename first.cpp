@@ -391,7 +391,7 @@ void myFunction(string fname) {
   cout << fname << " Refsnes\n";
 }
 
-Default Parameter - If we call the function without an argument, it uses the default value
+Default/Optional Parameter - If we call the function without an argument, it uses the default value
 VVVVVVVVVVVV
 void myFunction(string country = "Norway") {
   cout << country << "\n";
@@ -407,5 +407,29 @@ int main() {
 // India
 // Norway
 // USA
+
+Multiple Parameters -
+vvvvvvvvv
+void myFunction(string fname, int age) {
+  cout << fname << " Refsnes. " << age << " years old. \n";
+}
+int main() {
+  myFunction("Liam", 3);        // Liam Refsnes. 3 years old.
+  return 0;
+}
+
+
+If you want the function to return a value, dont use the void keyword
+int myFunction(int x) {
+  return 5 + x;
+}
+int main() {
+  cout << myFunction(3);
+  return 0;
+}
+// Outputs 8 (5 + 3)
+
+
+
 
 */
