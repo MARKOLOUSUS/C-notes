@@ -366,12 +366,46 @@ In those cases, new helps you create memory, and delete helps you clean it up wh
 */
 
 /*
-Function
+Function are used to perform certain actions, and they are important for reusing code: Define the code once, and use it many times.
 
-void myFunction() {
-  // code to be executed
+// Create a function
+void myFunction() {                                          //decleration
+  cout << "I just got executed!";                            //definition
 }
 
-  function is ....
+int main() {
+  myFunction(); // call the function
+  myFunction(); // call the function the 2nd time
+  return 0;
+}
+// Outputs "I just got executed!"
+// Outputs "I just got executed!"
+
+Parameters are specified after the function name, inside the parentheses. You can add as many parameters as you want, just separate them with a comma:
+VVVVVVVVVV
+void functionName(parameter1, parameter2, parameter3) {
+  // code to be executed
+}
+or //            V type  V Parameter
+void myFunction(string fname) {
+  cout << fname << " Refsnes\n";
+}
+
+Default Parameter - If we call the function without an argument, it uses the default value
+VVVVVVVVVVVV
+void myFunction(string country = "Norway") {
+  cout << country << "\n";
+}
+int main() {
+  myFunction("Sweden");
+  myFunction("India");
+  myFunction();
+  myFunction("USA");
+  return 0;
+}
+// Sweden
+// India
+// Norway
+// USA
 
 */

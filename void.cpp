@@ -2,7 +2,6 @@
 
 int main(void)
 {
-
     std::string name;
 
     std::cout << "Name: ";
