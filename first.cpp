@@ -440,6 +440,35 @@ int main() {
 // Outputs 8 (5 + 3)
 
 
+Pass By Reference
+void changeValue(int &num) {
+  num = 50;
+}
+int main() {
+  int value = 10;
+  changeValue(value);  // Call the function and change the value to 50
+  cout << value;
+  return 0;
+}
+
+void swapNums(int &x, int &y) {
+  int z = x;
+  x = y;
+  y = z;
+}
+
+void modifyStr(string &str) {
+  str += " World!";
+}
+int main() {
+  string greeting = "Hello";
+  modifyStr(greeting);
+  cout << greeting;
+  return 0;
+}
+
+
+
 
 
 */
