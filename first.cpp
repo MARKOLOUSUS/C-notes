@@ -530,4 +530,45 @@ int main(void) {
   int result2 = plusFunc(1, 2, 3);
 }
 
+
+
+Local Scope
+A variable created inside a function belongs to the local scope of that function, and can only be used inside that function:
+void myFunction() {
+  // Local variable that belongs to myFunction
+  int x = 5;
+
+  // Print the variable x
+  cout << x;
+}
+int main() {
+  myFunction();
+  cout << x;            << this cout wont work
+  return 0;
+}
+
+
+
+Global Scope
+A variable created outside of a function, is called a global variable and belongs to the global scope.
+// Global variable x
+int x = 5;
+void myFunction() {
+  // We can use x here
+  cout << x << "\n";     << 5
+}
+void callX() {
+ int x = 33;              << Local
+ cout << x << endl;       << will print the local variable (33)
+}
+int main() {
+  myFunction();
+
+  // We can also use x here
+  cout << x;           << 5
+  return 0;
+}
+
+
+
 */
