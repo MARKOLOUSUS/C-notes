@@ -511,4 +511,23 @@ int main() {
 }
 
 
+
+Function overloading allows multiple functions to have the same name, as long as their parameters or data type are different:
+EX: dif data type
+int myFunction(int x)
+float myFunction(float x)
+double myFunction(double x, double y)
+
+EX: dif parameter
+int plusFunc(int x, int y) {
+  return x + y;
+}
+int plusFunc(int x, int y, int z) {
+  return x + y + z;
+}
+int main(void) {
+  int result1 = plusFunc(3, 7);
+  int result2 = plusFunc(1, 2, 3);
+}
+
 */
