@@ -420,11 +420,21 @@ int main() {
 
 
 If you want the function to return a value, dont use the void keyword
+can be stored in a variable
 int myFunction(int x) {
   return 5 + x;
 }
 int main() {
   cout << myFunction(3);
+  return 0;
+}
+// Outputs 8 (5 + 3)
+
+int myFunction(int x, int y) {
+  return x + y;
+}
+int main() {
+  cout << myFunction(5, 3);
   return 0;
 }
 // Outputs 8 (5 + 3)
