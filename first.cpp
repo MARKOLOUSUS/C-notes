@@ -589,5 +589,52 @@ int sum(int k) {
 
 
 
+A lambda function is a small, anonymous function you can write directly in your code. It's useful when you need a quick function without naming it or declaring it separately.
+VV syntax VV
+[capture] (parameters) { code };
+
+int main() {
+  auto message = []() {
+    cout << "Hello World!\n";
+  };
+  message();
+  return 0;
+}
+
+EX:
+#include <iostream>
+#include <functional> // Needed for std::function
+using namespace std;
+// A function that takes another function as parameter
+void myFunction(function<void()> func) {
+  func();
+  func();
+}
+int main() {
+  auto message = []() {
+    cout << "Hello World!\n";
+  };
+  myFunction(message);
+  return 0;
+}
+
+
+Lambdas in Loops
+int main() {
+  for (int i = 1; i <= 3; i++) {
+    auto show = [i]() {
+      cout << "Number: " << i << "\n";
+    };
+    show();
+  }
+  return 0;
+}
+
+
+> Capture Clause [] - to give a lambda access to variables outside of it.
+
+
+
+
 
 */
