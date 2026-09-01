@@ -601,6 +601,15 @@ int main() {
   return 0;
 }
 
+int main() {
+  auto add = [](int a, int b) {
+    return a + b;
+  };
+  cout << add(3, 4);
+  return 0;
+}
+
+
 EX:
 #include <iostream>
 #include <functional> // Needed for std::function
@@ -631,10 +640,48 @@ int main() {
 }
 
 
-> Capture Clause [] - to give a lambda access to variables outside of it.
+Capture Clause [] - to give a lambda access to variables outside of it.
+int main() {
+  int x = 10;     << variable outside the lambda
+  auto show = [x]() {
+    cout << x;
+  };
+  show();
+  return 0;
+}
 
+Capture and Parameter
+int main() {
+  int x = 10;
+  auto show = [x](int a, int b) {
+    cout << x + a + b;
+  };
+  show(5, 6);
+  return 0;
+}
 
+Capture by Reference
+int main() {
+  int x = 10;
+  auto show = [&x]() {
+    cout << x;
+  };
+  x = 20;  // Change x after the lambda is created
+  show();
+  return 0;
+}
 
+Regular Functions vs Lambda Functions
+Both regular functions and lambda functions let you group code and run it later, but they are used in slightly different situations.
 
+Use a regular function when:
+ You plan to reuse the function in multiple places
+ You want to give the function a clear, meaningful name
+ The logic is long or complex
+Use a lambda function when:
+ You only need the function once
+ The code is short and simple
+ You want to pass a quick function into another function
+.
 
 */
