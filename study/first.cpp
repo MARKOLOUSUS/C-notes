@@ -1,4 +1,4 @@
-/*
+/* Header files
 #include <iostream>   // cout (output), cin (input)
 #include <string>     // std::string (text and sentences)
 #include <vector>     // std::vector (an array, dynamic/can grow or shrink)
